@@ -40,8 +40,8 @@ fi
   echo "start to copy cf_tags" 
   cp ./cf_tags.log /tmp/cf_tags.log    || fail "copy maxop.log"
   echo "start to copy fail-php.txt" 
-  rm /tmp/fail-php.txt 2>&1 >/dev/null
-  cp ./fail-php.txt /tmp/fail-php.txt || echo "no fail-php.txt good"
+  rm -f /tmp/fail-php.txt
+  cp ./fail-php.txt /tmp/fail-php.txt || echo "no fail-php.txt, good"
 ) || fail "copy fail"
 
 chmod +w /tmp/sql.log || fail "chmod on logs"
