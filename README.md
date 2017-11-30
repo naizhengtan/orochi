@@ -12,7 +12,7 @@ Install and run Orochi
 Since Orochi requires building and deploying its own MySQL/HHVM 
 as well as some software/libraries with specific version, I strongly 
 recommend using a clean environment to try Orochi, for example
-Linux container. Also, Orochi needs Ubuntu14.04.
+using a clean Linux container. Also, Orochi needs Ubuntu14.04.
 
 ### Build a clean Linux container (Ubuntu)
 
