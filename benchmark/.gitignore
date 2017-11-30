@@ -1,0 +1,5 @@
+info.log
+*.tar.gz
+/hotcrp/
+/wiki/
+/phpbb/

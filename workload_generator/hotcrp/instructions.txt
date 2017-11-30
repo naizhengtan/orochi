@@ -1,0 +1,63 @@
+Workload Builder
+=========
+
+1. Install PhantomJS  (http://phantomjs.org)   
+
+For Ubuntu:
+
+Install dependencies:
+  $ sudo apt-get install build-essential g++ flex bison gperf ruby perl \
+    libsqlite3-dev libfontconfig1-dev libicu-dev libfreetype6 libssl-dev \
+    libpng-dev libjpeg-dev python libx11-dev libxext-dev
+
+Install PhantomJS
+  $ git clone --recurse-submodules git://github.com/ariya/phantomjs.git
+  $ cd phantomjs
+  $ ./build.py
+
+Note: this may take a long time to compile (>30mins) depending on the system.
+
+For other systems:
+
+Go to http://phantomjs.org and download.
+
+=========
+
+2. Install CasperJS   (http://casperjs.org)
+
+Install CasperJS
+  $ git clone git://github.com/n1k0/casperjs.git
+  $ cd casperjs
+  $ ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs
+
+=========
+
+3. Run Workload Builder
+
+Create users:
+  $ casperjs create-users.js --url=<url> (--users=<user list file> || --num=<number of users>)
+    
+  Options:
+      url:    The URL for the HotCRP server (required)
+      users:  A file of newline-seperated usernames/emails for registration
+      num:    Number of users to register
+  Either <users> or <num> need to be supplied.
+  If given parameter <num>, the script will generate a file of usernames (user#@email.com) and register them.
+
+Generate workloads:
+  $ casperjs workload-builder.js --url=<url> --users=<urser list file>
+  
+  Options:
+      url:    The URL for the HotCRP server (required)
+      users:  A file of newline-seperated usernames/emails (required)
+
+
+========
+
+4. steps
+
+(1) create HotCRP admin
+(2) create users
+(3) modify the passwords
+(4) save the database
+(5) run workload generator

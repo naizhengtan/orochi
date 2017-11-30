@@ -1,0 +1,7 @@
+(1) get number of users, and gen reply_view_file
+
+$ php fetch.php reply_review_file
+
+(2) generate user workload
+
+$ php gen_workload_log.php reply_review_file centos/

@@ -1,0 +1,7 @@
+err.log
+config.txt
+main
+check
+sqlite_ttdb_build
+*.o
+init_query.h

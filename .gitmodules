@@ -1,0 +1,9 @@
+[submodule "hhvm-verifier"]
+	path = hhvm-verifier
+	url = https://github.com/OrochiProject/hhvm-verifier.git 
+[submodule "hhvm-log"]
+	path = hhvm-log
+	url = https://github.com/OrochiProject/hhvm-log.git 
+[submodule "mysql-log"]
+	path = mysql-log
+	url = https://github.com/OrochiProject/mysql-log.git 

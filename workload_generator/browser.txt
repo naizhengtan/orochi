@@ -1,0 +1,28 @@
+-- Browser market share
+
+2017  Chrome  IE/Edge Firefox Safari  Opera
+August  76.9 %  4.3 % 13.1 %  3.0 % 1.2 %
+
+from https://www.w3schools.com/browsers/
+
+
+-- OS market share
+
+2017  Win10   Win8  Win7  Vista WinXP Linux Mac  Chrome OS Mobile
+August  36.9% 9.3%  29.8% 0.1%  0.7%  6.0%  9.9%  0.2%     7.2%
+
+from https://www.w3schools.com/browsers/browsers_os.asp
+
+
+-- HTTP_USER_AGENT
+
+User-Agent: <product> / <product-version> <comment>
+
+Common format for web browsers:
+
+User-Agent: Mozilla/<version> (<system-information>) <platform>
+(<platform-details>) <extensions>
+
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent
+

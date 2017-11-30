@@ -1,0 +1,13 @@
+1. dump the database
+
+mysqldump -u -r [app_db] > create_table.sql
+
+2. run rewrite script
+
+// simplebank
+./rewrite.py --input create_table.sql --output ./init_query.h --generate-config --discard-insert
+
+// hotcrp
+./rewrite.py --input create_table.sql --output ./init_query.h --generate-config
+
+3. make

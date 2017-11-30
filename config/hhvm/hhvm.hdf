@@ -1,0 +1,65 @@
+Server {
+  Port = 4098
+  RequestTimeoutSeconds = -1
+  RequestMemoryMaxBytes = -1
+}
+
+Eval {
+  Jit = false
+}
+
+ResourceLimit {
+  SocketDefaultTimeout = 500  # in seconds
+}
+
+Log {
+  Level = Error
+    UseLogFile = true
+    File = /tmp/hhvm_error.log
+    Access {
+      * {
+        File = /tmp/hhvm_access.log
+          Format = %h %l %u %t "%r" %>s %b
+      }
+    }
+}
+
+VirtualHost {
+  * {
+    Pattern = .*
+      RewriteRules {
+        dirindex {
+          pattern = ^/(.*)/$
+            to = $1/index.php
+            qsa = true
+        }
+      }
+  }
+}
+
+StaticFile {
+  FilesMatch {
+    * {
+      pattern = .*.(dll|exe)
+        headers {
+          * = Content-Disposition: attachment
+        }
+    }
+  }
+  Extensions {
+    css = text/css
+      gif = image/gif
+      html = text/html
+      jpe = image/jpeg
+      jpeg = image/jpeg
+      jpg = image/jpeg
+      png = image/png
+      tif = image/tiff
+      tiff = image/tiff
+      txt = text/plain
+  }
+}
+
+MySQL {
+  TypedResults = true
+}

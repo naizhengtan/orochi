@@ -1,0 +1,20 @@
+implementation notes
+
+autoincrement:
+    select max id from
+    read from files
+    currect hack is manual count max, implicit assumption is that id is only set by system not by user
+
+[FIXED] escape characters:
+    
+insert on duplicate update:
+
+[DONE] primary_key unique_key 
+
+[DONE] check db access log type and ret val
+
+[DONE] for commit and rollback, take ts first then execute
+
+[FIXED] for update_table timestamp, the init phase is not counted!
+
+[FIXED] does table name has ``???????

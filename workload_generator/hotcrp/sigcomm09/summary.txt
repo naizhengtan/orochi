@@ -1,0 +1,30 @@
+The ACM SIGCOMM 2009 technical program committee process
+
+#papers = 400
+#valid_papers = 269 
+avg_comment_length = 3625.2170731707
+#reviewers = 58
+#reviews = 820
+
+
+826 reviews
+light pc: 10-15 papers
+heavy pc: 20-25 papers + PC meeting
+
+27 light pc
+25 heavy pc
+6 senior pc
+
+
+
+
+data.txt
+
+Suitably anonymized data from the submission management system (HotCRP) are
+provided here. The document shows:
+anonymized paper id,
+           review id,
+           overall merit,
+           reviewer confidence,
+           character count of review,
+           decision (-1: rejected, 2, accepted)

@@ -1,0 +1,10 @@
+*.pyc
+*.log
+*.diff
+*.backup
+core
+/mysql-log-bin/
+/mysql-vanilla-bin/
+/hhvm-vanilla/
+/casperjs/
+/phantomjs/

@@ -1,0 +1,16 @@
+*~
+docs
+filestore
+logs
+conf/options.php
+Code/options.inc
+record_lib.php
+ttapc_lib.php
+ttdb_lib.php
+nondet_lib.php
+sess_lib.php
+link_lib.sh
+profiler.php
+*.vimentry
+.vimfiles.hotcrp/
+quick_gen_project_hotcrp_autogen.sh
