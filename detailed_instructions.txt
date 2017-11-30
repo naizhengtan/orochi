@@ -1,4 +1,4 @@
-All the instructions have been tested under Ubuntu14.04/16.04.
+All the instructions have been tested under Ubuntu14.04.
 
 Preparation
 --------------
