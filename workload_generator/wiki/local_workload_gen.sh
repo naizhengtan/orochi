@@ -86,7 +86,7 @@ function init {
 # main
 if [ $# == 1 ]; then
   TASK=$1
-else if [ $# == 0 ]; then
+elif [ $# == 0 ]; then
   TASK="veri_workload"
 else
   usage
