@@ -5,8 +5,8 @@ record_lib.php
 nondet_lib.php
 profiler.php
 sess_lib.php
-cache/
+/cache/
 .vimfiles.phpbb/
-cache_cheng/
+/cache_cheng/
 phpbb.vimentry
 quick_gen_project_phpbb_autogen.sh
