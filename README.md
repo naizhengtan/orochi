@@ -88,7 +88,8 @@ Run workload generator:
     $ cd $ORO_HOME/workload_generator/<app>
       (<app> should be one of hotcrp/wiki/phpbb)
     $ ./local_workload_gen.sh
-    $ cd $ORO_HOME/verification/verify2.sh <app>
+    $ cd $ORO_HOME/verification
+    $ ./verify2.sh <app>
       (<app> should be the same app as the workload
       generated in the last step.) 
 
