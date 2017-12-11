@@ -5,6 +5,7 @@ if [ "$ORO_HOME" == "" ]; then
 fi
 
 source $ORO_HOME/env.sh
+STAND_ALONE_RUN="false"
 
 #=========================================
 
@@ -141,7 +142,10 @@ GUEST_ZIPF=$USER_ZIPF_FD$GUEST_ZIPF_NAME
 
 
 # (1) init
-init
+if [ $STAND_ALONE_RUN == "true" ]; then
+  init
+fi
+
 # set the correct URL
 if [ "$TASK" == "veri_workload" ]; then
   URL=$WEB_PHPBB_PROXY_URL

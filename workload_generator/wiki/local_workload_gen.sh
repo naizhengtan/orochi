@@ -5,6 +5,7 @@ if [ "$ORO_HOME" == "" ]; then
 fi
 
 source $ORO_HOME/env.sh
+STAND_ALONE_RUN="false"
 
 #===========================
 # Assumption:
@@ -98,7 +99,9 @@ if [ "$TASK" != "prof_normal" ] && [ "$TASK" != "prof_oro" ] && [ "$TASK" != "ve
 fi
 
 # (0) init
-init
+if [ $STAND_ALONE_RUN == "true" ]; then
+  init
+fi
 cp $WEB_WIKI_PATH/LocalSettings_normal.php $WEB_WIKI_PATH/LocalSettings.php
 
 if [ "$TASK" != "prof_normal" ]; then

@@ -5,6 +5,7 @@ if [ "$ORO_HOME" == "" ]; then
 fi
 
 source $ORO_HOME/env.sh
+STAND_ALONE_RUN="false"
 
 #======Configuration Variables==========
 
@@ -103,7 +104,10 @@ if [ "$TASK" != "veri_workload" ] && [ "$TASK" != "prof_normal" ] && [ "$TASK" !
 fi
 
 # (0) init
-init
+if [ $STAND_ALONE_RUN == "true" ]; then
+  init
+fi
+
 if [ "$TASK" != "prof_normal" ]; then
   URL=$WEB_HOTCRP_PROXY_URL
 else
