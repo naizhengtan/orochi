@@ -9,8 +9,8 @@ function versioncheck {
   if [ "$VERSION" != "14.04" ]; then
     echo "WARNING: current linux distribution has not been evaluated."
     echo "         Packages/libraries/commands might not work properly."
-    echo "         Please see detailed_instructions.txt to build Orochi on your own."
-    exit
+    echo "         Please see detailed_instructions.md if ecountering any prolem."
+    read -p "Press enter to continue"
   fi
 }
 
