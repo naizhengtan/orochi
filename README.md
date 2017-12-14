@@ -18,7 +18,7 @@ However, there might be dependency and configuration problems.
 To address those issues, see the detailed installation process in
 [detailed instructions](detailed_instructions.md).
 
-Below we step through the process for installing Orochi on Linux container.
+Below we step through the process for installing Orochi in a Linux container.
 For installing Orochi on an existing environment, skip [Step 0](#step0)
 and start from [Step 1](#step1).
 
@@ -126,7 +126,7 @@ in the [detailed instructions](detailed_instructions.md).
 
 One can customize the workload generator for new workloads.
 To do so, please refer to [Generate workloads](detailed_instructions.md/#generateworkloads)
-in the [detailed instructions](detailed_instructions.md),
+in the [detailed instructions](detailed_instructions.md).
 
 Third, collect trace data for a following audit phase.
 
