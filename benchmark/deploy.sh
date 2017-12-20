@@ -29,6 +29,8 @@ fi
   cp -r ./branch /tmp/branch    || fail "copy branch fail"
   echo "start to copy trace"
   cp ./trace_seq.log /tmp/trace_seq.log    || fail "copy trace_seq.log"
+  echo "need sudo to remove sql.log"
+  sudo rm -f /tmp/sql.log
   echo "start to copy sql"
   cp ./sql.log   /tmp/sql.log      || fail "copy sql.log"
   echo "start to copy apc"

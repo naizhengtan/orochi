@@ -19,6 +19,8 @@ for name in ${BENCH_NAME[@]}; do
   wget $REMOTE_SERVER/$name$SUFFIX >> $INFO_LOG 2>&1\
     && echo "       Succeed downloading [$name]"\
     || echo "       FAIL downloading [$name]"
+  # remove the old one if any
+  rm -rf $name
   # unzip and remove
   echo "[INFO] unzip $name$SUFFIX"
   tar xzf $name$SUFFIX >> $INFO_LOG 2>&1 && rm $name$SUFFIX\
